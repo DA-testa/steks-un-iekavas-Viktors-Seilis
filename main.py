@@ -27,16 +27,13 @@ def find_mismatch(text):
 
 
 def main():
-    type = input()
-
+    type = input("Lūdzu ievadiet I vai F :  ")
     if "F" in type:
         print("Files input option is not described in the task, therefore not implemented")
-
     elif "I" in type:
-        text = input()
+        text = input("Lūdzu ievadiet tekstu:  ")
         mismatch = find_mismatch(text)
         print(mismatch)
-
     else:
         print("Invalid input type")
 
